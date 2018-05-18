@@ -1,3 +1,4 @@
 
 .idea/*
-target/classes/com/lunzhiyu/virgo/VirgoApplication.class
+target/*
+.DS_Store
