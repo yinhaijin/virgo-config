@@ -9,4 +9,4 @@ spring:
       server:
         git:
           uri: https://github.com/yinhaijin/virgo-config
-          searchPaths: data
+          searchPaths: project-config
