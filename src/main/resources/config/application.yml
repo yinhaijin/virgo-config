@@ -1,5 +1,8 @@
 server:
   port: 8090
+  servlet:
+    session:
+      timeout: 60
 
 spring:
   application:
@@ -10,3 +13,8 @@ spring:
         git:
           uri: https://github.com/yinhaijin/virgo-config
           searchPaths: project-config
+eureka:
+  client:
+    enabled: true
+    service-url:
+      defaultZone: http://localhost:8090/eureka/
