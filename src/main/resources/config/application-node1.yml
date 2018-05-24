@@ -1,9 +1,8 @@
 server:
-  port: 8090
+  port: 8877
   servlet:
     session:
       timeout: 60
-
 spring:
   application:
     name: virgo-config
@@ -15,6 +14,7 @@ spring:
           searchPaths: project-config
 eureka:
   client:
-    enabled: true
+    register-with-eureka: true
+    fetch-registry: true
     service-url:
-      defaultZone: http://localhost:8090/eureka/
+      defaultZone: http://192.168.108.94:8887/eureka/,http://192.168.108.94:8888/eureka/,http://192.168.108.94:8889/eureka/
