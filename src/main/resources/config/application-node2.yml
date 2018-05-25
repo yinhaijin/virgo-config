@@ -1,9 +1,8 @@
 server:
-  port: 8878
+  port: 8877
   servlet:
     session:
       timeout: 60
-
 spring:
   application:
     name: virgo-config
@@ -11,8 +10,8 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/yinhaijin/virgo-config
-          searchPaths: project-config
+          uri: https://github.com/yinhaijin/config-repo/
+          search-paths: config-repo
 eureka:
   client:
     register-with-eureka: true
